@@ -1,0 +1,103 @@
+<!--Nothing  is there Here Create a folder which is having a 2 sub folders. which are one is "CSS" & "JavaScript" and
+ also if you have any media then you can create another folder for good structure to the data--
+ Lets start The Proposal Website Making......-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Proposal</title>
+    <!--This Link Is to tie the CSS to the HTML-->
+    <link rel="stylesheet" href="./CSS/loveproposal.css">
+    <script rel="script" href="./JavaScript/proposal.js"></script>
+ </head>
+ <body>
+    <!--Creating a division name called page1-->
+    <div class="page1" id="page01">
+        <h1>I Have Something Special For You</h1>
+        <p>Are You Ready To See This...</p>
+        <button class="playbtn" onclick="playAudio()">Yes</button>
+        <button class="playbtn" id="noButton" onmouseover="moveButton()" >No</button>
+        <!--Audio Elements-->
+        <audio id="myAudio">
+            <source src="./Images/Climax Bgm.mp3" type="audio/mp3">
+        </audio>
+    </div>
+    
+    <!--Page2 content (written it hidden using CSS)-->
+    <div class="page2" id="page2">
+        <div class="pg2-cont">
+            <h1>Hello Dear...</h1>
+            <p>Are you wondering what I’m up to, thinking if I’m hesitating to say something? I feel like I have so much to tell you, 
+                yet I wonder if I can express the vastness of my love in just a few words. Even if I manage to say it, will you be able
+                 to handle the truth of my love?</p>
+
+            <p>
+                Words feel insufficient to describe the love I have for you. But I’ll say this much—when I see you, I get a feeling that I can't put into words.
+                 It’s like the happiness I’d feel from earning the world. But without you, even a moment feels like an eternity. My heart is ready to pay any 
+                 price for this love, but even then, it feels like this love belongs solely to me.
+            </p>
+
+            <p>
+                I can’t simply say, “I love you” in one line. It feels like my heart wants to bring an ocean of love to you, pouring it all on you. Every moment, 
+                my love for you wants to introduce itself anew, like waves that never stop coming. Keeping all this love hidden within me feels heavy, so I’m sharing 
+                it with you now—will you share this feeling with me too?
+            </p>
+
+            <p>
+                Do you believe me when I say that your distance feels like my breath being stolen away? They say it only takes a moment for love to be born, right?
+                 That moment could come at any time, and for you, my eyes will wait forever.
+            </p>
+
+            <p>
+                I don’t know how long it took for Brahma to write our destiny on the slate of time, but the moments I dream of spending with you—those moments alone 
+                are beyond description.
+            </p>
+
+            <p>
+                I never thought I’d have the courage to say all this, even in my dreams. But if I stay silent, I fear these feelings might remain as unfulfilled dreams.
+                 That’s why I’m saying this now—not just to express how much I love you, but also to know if you feel the same. If you want to know how much love I have
+                  for you, just look into my eyes the moment we meet. That will be the answer.
+            </p>
+            <p>Remember that moment. If you ask how valuable your distance is to me, the tears behind my eyes will tell you. And if you ask how much joy I feel when I see you,
+                 the tears of happiness that overflow from my eyes will show you. Why do I love you so much? Why do I care this deeply? I don’t have answers to those questions, 
+                 and I’m not even looking for them. What value can compare to the love that exists without reason?</p>
+            <p>And so, every moment spent with you feels like wealth beyond measure. It’s because of this immense love that there is also this pain of longing.</p>
+            <p>After reading all this, I don’t know what you’ll feel, but if you look closely, behind every word, you’ll see an infinite love for you.</p>
+            <p>Finally, let me say this: If you agree in this moment, let’s start this journey together. I can’t promise how much I’ll achieve in life, but I promise I’ll work every
+                 moment to make sure you never have to struggle. No matter how many challenges life brings, I’m ready to face them all if it means sharing them with you.</p>
+                 <p>Ending this message feels painful, but if ending it means I’ll get to meet you again, then I’ll stop here for now. Take care.</p>
+                 <p>After saying all this to you, how can I not say this one thing?</p>
+            <p>I Love You❤</p>
+        </div>
+        <div class="pg2-final">
+            <h1>I Miss You Raa</h1>
+        </div>
+        <div class="fin-btns">
+            <p>Now tell me...(Do You Love Me)</p>
+            <button class="responsebtn" onclick="accepted()">Yes</button>
+            <button class="responsebtn" id="noButton2" onmouseover="moveButton2()">No</button>
+        </div>
+    </div>
+
+    <!--Page3-->>
+    <div class="page3" id="page3">
+        <!--Using a Canvas tag for Fire Crackers Effect this a Drawing feature Its a little bit difficult to add Background or Text on it-->
+        <canvas id="fireworksCanvas">
+        </canvas>
+        <!--I was reoved that division to write it on inner division for text appearence in a simple way-->
+        <div class="text">
+            <h1>I Love You ❤</h1>
+        <p>Eeeew… This day will remain etched in my memory forever, and with this one word, my heart feels overwhelmed with joy.
+            Now, start thinking about me. This journey with you feels like sailing through an endless ocean, but it doesn’t matter—no matter the destination, I’ll be by your side with every step you take.
+            Truly, this moment feels like it has breathed life into my love. Once again, I miss you (it’s more than saying 'I love you').
+        </p>
+        <img src="./Images/sticker.png">
+        </div>
+    </div>
+    <!--Linking The Java Script -->>
+    <script src="./JavaScript/rough.js"></script>
+    
+ </body>
+ </html>
+ <!--Here HTML Code Ended-->

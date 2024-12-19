@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Playwrite+NL+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin:0;
+    text-decoration: none;
+    list-style:none;
+    box-sizing:border-box;
+
+}
+html body{
+    font-family:montserrat;
+    font-family: "poppins", sans-serif;
+    background-attachment: fixed;
+    background-image:url(../Images/roses1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.page1 {
+    animation: fadein 3s forwards; /* 3s is the duration */
+    margin-top: 0%;
+    transition: opacity 2s ease-out;
+    width: 100%;
+    height: 100vh;
+    padding-top: 15%;
+    
+}
+ /* Initially, the page will be fully visible */
+ #page01 {
+    opacity: 1;
+    transition: opacity 2s ease-out;
+}
+
+/* Class to trigger the fade-out effect */
+.fade-out {
+    animation: fadeOut 2s forwards; /* Fade out over 2 seconds */
+}
+.page1 h1{
+    font-family:"Alex Brush";
+    font-size: 45px;
+    background: none;
+    animation: fadeIn 2s ease-in-out;
+}
+.page1 p{
+    font-weight: bold;
+    color:white;
+    animation: fadeIn 2s ease-in-out;
+}
+.playbtn{
+    width:100px;
+    height: 40px;
+    background-color:white;
+    color: gray;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    justify-content: center;
+    margin: 2%;
+
+}
+.page2{
+    display: none;
+    width: 80%;
+    height: auto;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.8);
+    animation: fadeIn 2s ease-in-out;
+    margin-top: 10vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: left;
+    padding: 5%;
+    margin: auto;
+    overflow: auto;
+}
+.page2 .pg2-cont p{
+    margin-top: 10px;
+   font-weight: bold;
+   color: darkgrey;
+}
+.pg2-final{
+    display: flex;
+    justify-content: center;
+    font-family:"Alex Brush", cursive ;
+    margin-top: 5%;
+}
+.responsebtn{
+    width:100px;
+    height: 40px;
+    background-color: white;
+    color: gray;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    justify-content: center;
+    margin: 3%;
+}
+.responsebtn1{
+    width:100px;
+    height: 40px;
+    background-color: white;
+    color: gray;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    justify-content: center;
+    margin: 0%;
+}
+
+.playbtn:hover , .responsebtn1:hover,.responsebtn:hover{
+background: none;
+border: 2px solid white;
+color: white;
+}
+
+.fin-btns{
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10%;
+}
+canvas {
+    display: flex;
+    
+}
+.page3 {
+    position: relative; /* Establishes positioning context for .text */
+    display: none;
+    justify-content: center;
+    animation: fadeIn 2s ease-in-out; /* Adjust dynamically using JavaScript or remove for debugging */
+}
+
+.page3 .text {
+    position: absolute;
+    font-size: 12px;
+    padding: 2%;
+    margin:auto;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.2);
+    text-align: left;
+    border: none;
+    backdrop-filter: blur(2px);
+    box-sizing: border-box;
+    width: 60%;
+    height: auto;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-bottom: 0px;
+    margin-top: 30vh;
+}
+
+
+.text h1{
+    font-size: 22pxpx;
+    color:gray;
+    font-family: "arial", cursive;
+}
+.text p{
+    font-size: 18px;
+    font-weight: bold;
+    color:gray;
+}
+
+.text img{
+    width:200px;
+    height: 100%;
+    margin: auto;
+    margin-top: 5%;
+    margin-left: 70%;
+    animation: fadeIn 3s ease-in-out;
+}
+
+@media(max-width:768px){
+    .page1{
+        margin-top: 0%;
+        padding-top: 50%;
+    }
+
+.page1 h1{
+font-size: 22px;  
+}
+.page1 p{
+    font-size: 14px;
+}
+.playbtn{
+    width: 30%;
+    height: 30px;
+    margin-top: 5%;
+}
+.page2{
+    width: 100%;
+    height: auto;
+    padding: 5%;
+    overflow: visible;
+}
+.page2 h1{
+    font-size: 18px;
+}
+.page2 p{
+    font-size: 16px;
+}
+.responsebtn{
+    width:30%;
+    height: 30px;
+}
+.page3 .text{
+    width: 80%;
+    height: auto;
+}
+.text h1{
+    font-size: 14px;
+}
+.text p{
+font-size: 12px;
+}
+.text img{
+    margin: auto;
+}
+}
